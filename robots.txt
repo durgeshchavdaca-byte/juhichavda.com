@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://juhichavda.com/sitemap.xml
