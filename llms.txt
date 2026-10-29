@@ -20,5 +20,5 @@ Services: AEO (answer engine optimisation), SEO, GEO, international and local SE
 
 ## Guides & news
 
-- [AEO & SEO News (October 2026): Google Updates, ChatGPT Ads India, AI Search](https://juhichavda.com/news/): Plain-English AEO and SEO news for founders: Google September 2026 spam update, October ranking volatility, ChatGPT ads in India, Search Console AI reports — and what to do about each.
+- [AEO & SEO News Today (October 2026): Google, ChatGPT & AI Search Updates](https://juhichavda.com/news/): Daily plain-English AEO and SEO news for founders and marketers: Google updates, ChatGPT and AI search changes — each with what to do about it.
 - [How to Get Your Business on ChatGPT (2026): SEO vs AEO vs GEO + 9 Steps](https://juhichavda.com/guides/how-to-get-your-business-on-chatgpt/): How to get your business recommended by ChatGPT, Gemini and Google AI Mode in 2026. SEO vs AEO vs GEO explained, 9 practical steps, mistakes to avoid and FAQs.
