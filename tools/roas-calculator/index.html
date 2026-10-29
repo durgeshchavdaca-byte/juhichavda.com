@@ -26,7 +26,7 @@
 </div></header>
 <main>
 <div class="wrap"><div class="crumbs"><a href="/">Home</a> / <a href="/tools/">Free tools</a> / ROAS Calculator</div>
-<section class="hero"><div class="eyebrow">Free tool · Ads</div><h1>ROAS & <em>break-even</em> calculator</h1><p class="lead">Find out in seconds whether your ads actually make money — and the ROAS you need to hit your profit target.</p><div class="answer"><b class="k">QUICK ANSWER</b>ROAS = revenue ÷ ad spend. To know if it's good, compare it with your break-even ROAS = 1 ÷ profit margin. With a 40% margin you break even at 2.5x; anything above that is profit.</div>
+<section class="hero"><div class="eyebrow">Free tool · Ads</div><h1>ROAS & <em>break-even</em> calculator</h1><p class="lead">Find out in seconds whether your ads actually make money, and the ROAS you need to hit your profit target.</p><div class="answer"><b class="k">QUICK ANSWER</b>ROAS = revenue ÷ ad spend. To know if it's good, compare it with your break-even ROAS = 1 ÷ profit margin. With a 40% margin you break even at 2.5x; anything above that is profit.</div>
 <span class="updated">Updated 29 Oct 2026 · by <a href="/">Juhi Chavda</a></span></section>
 
 <section class="sec grid2">
@@ -36,15 +36,15 @@
     <div><label for="rev">Revenue from ads</label><input id="rev" type="number" min="0" value="180000"></div></div>
     <div class="row"><div><label for="margin">Profit margin <small>% before ads</small></label><input id="margin" type="number" min="0" max="100" value="40"></div>
     <div><label for="target">Target profit <small>% of revenue</small></label><input id="target" type="number" min="0" max="100" value="10"></div></div>
-    <p class="hint">Works for Google Ads, Meta, LinkedIn, Amazon or ChatGPT ads — in any currency.</p>
+    <p class="hint">Works for Google Ads, Meta, LinkedIn, Amazon or ChatGPT ads, in any currency.</p>
   </div>
   <div class="card" style="position:sticky;top:84px">
     <h2 style="font-size:20px;margin-bottom:12px">Results</h2>
     <div class="out">
-      <div class="metric hi"><small>Your ROAS</small><b id="r">–</b></div>
-      <div class="metric"><small>Break-even ROAS</small><b id="be">–</b></div>
-      <div class="metric"><small>Target ROAS</small><b id="tr">–</b></div>
-      <div class="metric"><small>Profit after ads</small><b id="pr">–</b></div>
+      <div class="metric hi"><small>Your ROAS</small><b id="r">-</b></div>
+      <div class="metric"><small>Break-even ROAS</small><b id="be">-</b></div>
+      <div class="metric"><small>Target ROAS</small><b id="tr">-</b></div>
+      <div class="metric"><small>Profit after ads</small><b id="pr">-</b></div>
     </div>
     <p id="verdict" style="margin-top:14px;font-weight:700"></p>
   </div>
@@ -53,7 +53,7 @@
 <p><b>ROAS</b> = revenue ÷ ad spend · <b>Break-even ROAS</b> = 1 ÷ margin · <b>Target ROAS</b> = 1 ÷ (margin − target profit) · <b>Profit after ads</b> = revenue × margin − ad spend.</p>
 <p>Planning a ChatGPT campaign? Use the <a href="/tools/chatgpt-ads-cost-calculator/">ChatGPT Ads cost calculator</a>.</p>
 <h2>FAQ</h2><details><summary>What is ROAS?</summary><p>ROAS (return on ad spend) is revenue from ads divided by ad spend. If you spend ₹10,000 and make ₹40,000 in sales, your ROAS is 4x.</p></details><details><summary>What is a good ROAS?</summary><p>A good ROAS is one above your break-even ROAS, which depends on your profit margin. With a 40% margin, break-even ROAS is 2.5x; with a 20% margin it is 5x. There is no single good number for every business.</p></details><details><summary>How do I calculate break-even ROAS?</summary><p>Break-even ROAS = 1 ÷ profit margin (as a decimal). A 25% margin means you need a ROAS of 4x just to cover product costs and ad spend.</p></details><details><summary>What's the difference between ROAS and ROI?</summary><p>ROAS only compares revenue to ad spend. ROI compares profit to the total investment, including product costs and fees, so it shows whether you actually made money.</p></details></section>
-<section class="cta"><div><h2>Want AI to <span>say your name?</span></h2><p>Get a free AI visibility audit — I'll test ChatGPT, Gemini, Perplexity &amp; Google AI for your brand.</p></div>
+<section class="cta"><div><h2>Want AI to <span>say your name?</span></h2><p>Get a free AI visibility audit. I'll test ChatGPT, Gemini, Perplexity &amp; Google AI for your brand.</p></div>
 <a class="btn btn-orange" href="/#contact">Get my free AI audit →</a></section>
 </div>
 </main>
@@ -63,12 +63,12 @@
 const $=id=>document.getElementById(id);const n=v=>Math.round(v).toLocaleString();
 function calc(){const s=+$('spend').value,r=+$('rev').value,m=+$('margin').value/100,t=+$('target').value/100;
 const roas=s?r/s:NaN,be=m?1/m:NaN,tr=(m-t)>0?1/(m-t):NaN,pr=r*m-s;
-$('r').textContent=isFinite(roas)?roas.toFixed(2)+'x':'–';$('be').textContent=isFinite(be)?be.toFixed(2)+'x':'–';
-$('tr').textContent=isFinite(tr)?tr.toFixed(2)+'x':'–';$('pr').textContent=n(pr);
+$('r').textContent=isFinite(roas)?roas.toFixed(2)+'x':'-';$('be').textContent=isFinite(be)?be.toFixed(2)+'x':'-';
+$('tr').textContent=isFinite(tr)?tr.toFixed(2)+'x':'-';$('pr').textContent=n(pr);
 const v=$('verdict');if(!isFinite(roas)||!isFinite(be)){v.textContent='';return;}
-if(roas>=tr){v.className='good';v.textContent='✓ Profitable and above your target — scale carefully.';}
+if(roas>=tr){v.className='good';v.textContent='✓ Profitable and above your target. Scale carefully.';}
 else if(roas>=be){v.className='warn';v.textContent='Profitable, but below your target margin.';}
-else{v.className='bad';v.textContent='✗ Below break-even — these ads are losing money.';}}
+else{v.className='bad';v.textContent='✗ Below break-even. These ads are losing money.';}}
 document.querySelectorAll('input').forEach(i=>i.oninput=calc);calc();
 </script>
 </body>
