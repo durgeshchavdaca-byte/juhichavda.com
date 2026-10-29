@@ -1,0 +1,24 @@
+# Juhi Chavda — AEO, SEO, websites & custom ERP
+
+> Juhi Chavda is an Ahmedabad-based marketer who helps startups, MSMEs and founders worldwide get found on Google and named in AI answers (ChatGPT, Gemini, Perplexity, Google AI Overviews), and builds the websites, custom tools and ERP systems behind that growth.
+
+Services: AEO (answer engine optimisation), SEO, GEO, international and local SEO, website design and development, brand design, custom tools and AI automation, custom ERP for MSMEs, CRM and WhatsApp automation, performance ads, guerrilla marketing and personal branding. Free AI visibility audits are available via the contact form.
+
+## Main
+
+- [Home](https://juhichavda.com/): services, process, pricing models, FAQ and contact
+- [All free tools](https://juhichavda.com/tools/): list of free calculators and generators
+
+## Tools
+
+- [Free AI Visibility Checker: Will ChatGPT Recommend You? (2026)](https://juhichavda.com/tools/ai-visibility-checker/): Free AI visibility score checker. Find out if ChatGPT, Gemini, Perplexity and Google AI Overviews are likely to recommend your business — plus a personalised fix-list and test prompts.
+- [ChatGPT Ads Cost Calculator (India ₹ & USD)](https://juhichavda.com/tools/chatgpt-ads-cost-calculator/): Free ChatGPT Ads cost calculator. Plan spend, impressions, clicks, cost per lead and ROAS in ₹ or $. Includes the India launch facts: ₹725/day minimum, CPM and CPC buying.
+- [Instagram Engagement Rate Calculator (Free)](https://juhichavda.com/tools/instagram-engagement-rate-calculator/): Free Instagram engagement rate calculator. Calculate engagement by followers or by reach using likes, comments, saves and shares — for one post or an average.
+- [Free llms.txt Generator](https://juhichavda.com/tools/llms-txt-generator/): Free llms.txt generator. Create a valid llms.txt file for your website in seconds — add your summary and key pages, then copy or download. Includes what llms.txt is and where to upload it.
+- [ROAS Calculator with Break-even ROAS (Free, 2026)](https://juhichavda.com/tools/roas-calculator/): Free ROAS calculator: work out return on ad spend, break-even ROAS, target ROAS and profit after ads for Google, Meta or ChatGPT ads.
+- [Meta Description & Title Length Checker with Google Preview (2026)](https://juhichavda.com/tools/serp-snippet-checker/): Free meta description length checker and title tag checker with a live Google SERP preview for desktop and mobile. See pixel width and whether your snippet will be cut off.
+
+## Guides & news
+
+- [AEO & SEO News (October 2026): Google Updates, ChatGPT Ads India, AI Search](https://juhichavda.com/news/): Plain-English AEO and SEO news for founders: Google September 2026 spam update, October ranking volatility, ChatGPT ads in India, Search Console AI reports — and what to do about each.
+- [How to Get Your Business on ChatGPT (2026): SEO vs AEO vs GEO + 9 Steps](https://juhichavda.com/guides/how-to-get-your-business-on-chatgpt/): How to get your business recommended by ChatGPT, Gemini and Google AI Mode in 2026. SEO vs AEO vs GEO explained, 9 practical steps, mistakes to avoid and FAQs.
