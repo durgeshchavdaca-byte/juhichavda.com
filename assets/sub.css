@@ -134,3 +134,6 @@ footer.site nav a:hover{color:var(--orange)}
 }
 .tbl{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:10px 0 18px}.tbl table{margin:0;min-width:560px}
 .prose h2[id],article[id]{scroll-margin-top:84px}
+table.bots select{padding:7px 9px;font-size:13.5px;min-width:96px}table.bots code,#report code{font-size:12.5px}#report td,table.bots td{vertical-align:middle}
+.card table{width:100%;border-collapse:collapse;font-size:14px;background:#fff}.card th,.card td{border:1px solid var(--line);padding:9px 11px;text-align:left}.card th{background:#F6F4EF}
+@media (max-width:560px){.tbl table.bots{min-width:0}table.bots th:nth-child(2),table.bots td:nth-child(2){display:none}table.bots td,table.bots th{padding:8px 7px;font-size:13px}table.bots select{min-width:78px;padding:6px}}

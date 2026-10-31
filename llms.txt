@@ -11,6 +11,7 @@ Services: AEO (answer engine optimisation), SEO, GEO, international and local SE
 
 ## Tools
 
+- [AI Crawler robots.txt Generator & Checker (Free, 2026)](https://juhichavda.com/tools/ai-crawler-robots-txt-generator/): Free robots.txt generator and checker for AI crawlers: GPTBot, OAI-SearchBot, ClaudeBot, Google-Extended and the new __usage_ai-training opt-out.
 - [Free AI Visibility Checker: Will ChatGPT Recommend You? (2026)](https://juhichavda.com/tools/ai-visibility-checker/): Free AI visibility checker. See if ChatGPT, Gemini, Perplexity and Google AI Overviews are likely to recommend your business, with a fix-list and test prompts.
 - [ChatGPT Ads Cost Calculator (India ₹ & USD): Budget, CPM, CPC](https://juhichavda.com/tools/chatgpt-ads-cost-calculator/): Free ChatGPT Ads cost calculator. Plan spend, impressions, clicks, cost per lead and ROAS in ₹ or $, with India's ₹725/day minimum built in.
 - [Instagram Engagement Rate Calculator (Free): by Followers or Reach](https://juhichavda.com/tools/instagram-engagement-rate-calculator/): Free Instagram engagement rate calculator. Calculate engagement by followers or by reach using likes, comments, saves and shares, for one post or an average.

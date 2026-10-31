@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Crawler robots.txt Generator & Checker (Free, 2026)</title>
+<meta name="description" content="Free robots.txt generator and checker for AI crawlers: GPTBot, OAI-SearchBot, ClaudeBot, Google-Extended and the new __usage_ai-training opt-out.">
+<link rel="canonical" href="https://juhichavda.com/tools/ai-crawler-robots-txt-generator/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="AI Crawler robots.txt Generator & Checker (Free, 2026)">
+<meta property="og:description" content="Free robots.txt generator and checker for AI crawlers: GPTBot, OAI-SearchBot, ClaudeBot, Google-Extended and the new __usage_ai-training opt-out.">
+<meta property="og:url" content="https://juhichavda.com/tools/ai-crawler-robots-txt-generator/">
+<meta property="og:image" content="https://juhichavda.com/assets/juhi-3d-original.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/assets/juhi-3d-original.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800;900&family=Geist+Mono:wght@400;500&family=Caveat:wght@700&family=Gochi+Hand&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/sub.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://juhichavda.com/"}, {"@type": "ListItem", "position": 2, "name": "Free tools", "item": "https://juhichavda.com/tools/"}, {"@type": "ListItem", "position": 3, "name": "AI crawler robots.txt", "item": "https://juhichavda.com/tools/ai-crawler-robots-txt-generator/"}]}, {"@type": "Person", "@id": "https://juhichavda.com/#juhi", "name": "Juhi Chavda", "url": "https://juhichavda.com/", "jobTitle": "AEO & SEO Consultant"}, {"@type": "WebApplication", "name": "AI Crawler robots.txt Generator & Checker", "url": "https://juhichavda.com/tools/ai-crawler-robots-txt-generator/", "description": "Build and check robots.txt rules for AI search and AI training crawlers.", "applicationCategory": "BusinessApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "creator": {"@id": "https://juhichavda.com/#juhi"}}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How do I block AI training but stay in Google and ChatGPT search?", "acceptedAnswer": {"@type": "Answer", "text": "Block the training crawlers (Google-Extended, GPTBot, ClaudeBot, Applebot-Extended, Meta-ExternalAgent, CCBot) and add the shared __usage_ai-training token, but keep Googlebot, Bingbot, OAI-SearchBot, Claude-SearchBot and PerplexityBot allowed. Choose the 'Stay in AI search, block training' preset above."}}, {"@type": "Question", "name": "What is __usage_ai-training?", "acceptedAnswer": {"@type": "Answer", "text": "A robots.txt token from an IETF draft that tells AI companies not to train on your pages. Google, Microsoft and OpenAI said on 30 October 2026 that they will honour it, Microsoft from 1 February 2027 and Google in early 2027. A 'User-agent: *' rule does not count, so the token has to be named."}}, {"@type": "Question", "name": "Does blocking GPTBot remove me from ChatGPT?", "acceptedAnswer": {"@type": "Answer", "text": "No. GPTBot is only for training. ChatGPT search uses OAI-SearchBot, and ChatGPT-User opens pages when someone asks. Block GPTBot alone and you can still appear in ChatGPT search answers."}}, {"@type": "Question", "name": "Can I block AI Overviews but stay in Google Search?", "acceptedAnswer": {"@type": "Answer", "text": "Not with robots.txt. AI Overviews and AI Mode use Googlebot, the same crawler as normal Search. Google-Extended only covers Gemini training and the Gemini app. Google has a separate Search Console setting for AI features."}}, {"@type": "Question", "name": "Should my business block AI crawlers?", "acceptedAnswer": {"@type": "Answer", "text": "Usually no. If you want ChatGPT, Gemini and Perplexity to recommend you, they need to read your pages. Blocking makes sense for publishers whose writing is the product, or for private and paid content."}}]}]}</script>
+</head>
+<body>
+<header class="topnav" id="nav"><div class="wrap">
+  <a class="logo" href="/"><b>J</b>juhi<i>.</i></a><a class="l" href="/">Home</a><a class="l" href="/#services">Services</a><a class="l on" href="/tools/">Free tools</a><a class="l" href="/news/">News</a><a class="l" href="/guides/">Guides</a>
+  <a class="btn btn-dark" href="/#contact">Free AI audit</a>
+  <button class="menu-btn" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+</div></header>
+<main>
+<div class="wrap"><div class="crumbs"><a href="/">Home</a> / <a href="/tools/">Free tools</a> / AI crawler robots.txt</div>
+<section class="hero"><div class="eyebrow">Free tool · AEO</div><h1>AI crawler <em>robots.txt</em> generator &amp; checker</h1><p class="lead">Choose which AI crawlers can read your site, including the new shared AI training opt-out, then check any robots.txt in one paste.</p><div class="answer"><b class="k">QUICK ANSWER</b>To stay in AI answers but keep your pages out of AI training, allow Googlebot, Bingbot, OAI-SearchBot, Claude-SearchBot and PerplexityBot, and block GPTBot, ClaudeBot, Google-Extended, CCBot and the shared __usage_ai-training token. Most businesses that want AI to recommend them should allow everything.</div>
+<span class="updated">Updated 31 Oct 2026 · by <a href="/">Juhi Chavda</a></span></section>
+
+<section class="sec card">
+  <h2 style="font-size:20px">1. Build your robots.txt</h2>
+  <label for="preset">Start from a preset</label>
+  <select id="preset">
+    <option value="all">Be found everywhere: allow all AI crawlers (best for most businesses)</option>
+    <option value="nottrain">Stay in AI search, block training</option>
+    <option value="noai">Block all AI, keep Google, Bing and Apple search</option>
+  </select>
+  <div class="tbl"><table class="bots"><tr><th>Crawler</th><th>Company</th><th>What it does</th><th>Your choice</th></tr><tr><td><code>Googlebot</code></td><td>Google</td><td>Google Search, including AI Overviews and AI Mode</td><td><select data-bot="Googlebot" data-kind="search"><option value="allow">Allow</option><option value="block">Block</option></select></td></tr><tr><td><code>Google-Extended</code></td><td>Google</td><td>Gemini training and answers in the Gemini app. Does not affect Google Search</td><td><select data-bot="Google-Extended" data-kind="training"><option value="allow">Allow</option><option value="block">Block</option></select></td></tr><tr><td><code>Bingbot</code></td><td>Microsoft</td><td>Bing search and Copilot answers</td><td><select data-bot="Bingbot" data-kind="search"><option value="allow">Allow</option><option value="block">Block</option></select></td></tr><tr><td><code>OAI-SearchBot</code></td><td>OpenAI</td><td>Shows your pages in ChatGPT search answers</td><td><select data-bot="OAI-SearchBot" data-kind="search"><option value="allow">Allow</option><option value="block">Block</option></select></td></tr><tr><td><code>ChatGPT-User</code></td><td>OpenAI</td><td>Opens a page when a ChatGPT user asks about it</td><td><select data-bot="ChatGPT-User" data-kind="user"><option value="allow">Allow</option><option value="block">Block</option></select></td></tr><tr><td><code>GPTBot</code></td><td>OpenAI</td><td>Collects pages to train OpenAI models</td><td><select data-bot="GPTBot" data-kind="training"><option value="allow">Allow</option><option value="block">Block</option></select></td></tr><tr><td><code>Claude-SearchBot</code></td><td>Anthropic</td><td>Claude's web search results</td><td><select data-bot="Claude-SearchBot" data-kind="search"><option value="allow">Allow</option><option value="block">Block</option></select></td></tr><tr><td><code>Claude-User</code></td><td>Anthropic</td><td>Opens a page when a Claude user asks about it</td><td><select data-bot="Claude-User" data-kind="user"><option value="allow">Allow</option><option value="block">Block</option></select></td></tr><tr><td><code>ClaudeBot</code></td><td>Anthropic</td><td>Collects pages to train Claude</td><td><select data-bot="ClaudeBot" data-kind="training"><option value="allow">Allow</option><option value="block">Block</option></select></td></tr><tr><td><code>PerplexityBot</code></td><td>Perplexity</td><td>Perplexity's search results</td><td><select data-bot="PerplexityBot" data-kind="search"><option value="allow">Allow</option><option value="block">Block</option></select></td></tr><tr><td><code>Perplexity-User</code></td><td>Perplexity</td><td>Opens a page when a Perplexity user asks about it</td><td><select data-bot="Perplexity-User" data-kind="user"><option value="allow">Allow</option><option value="block">Block</option></select></td></tr><tr><td><code>Applebot</code></td><td>Apple</td><td>Siri and Spotlight search</td><td><select data-bot="Applebot" data-kind="search"><option value="allow">Allow</option><option value="block">Block</option></select></td></tr><tr><td><code>Applebot-Extended</code></td><td>Apple</td><td>Apple AI training</td><td><select data-bot="Applebot-Extended" data-kind="training"><option value="allow">Allow</option><option value="block">Block</option></select></td></tr><tr><td><code>Meta-ExternalAgent</code></td><td>Meta</td><td>Meta AI training</td><td><select data-bot="Meta-ExternalAgent" data-kind="training"><option value="allow">Allow</option><option value="block">Block</option></select></td></tr><tr><td><code>CCBot</code></td><td>Common Crawl</td><td>Open web archive that many AI models train on</td><td><select data-bot="CCBot" data-kind="training"><option value="allow">Allow</option><option value="block">Block</option></select></td></tr><tr><td><code>Bytespider</code></td><td>ByteDance</td><td>ByteDance AI and search</td><td><select data-bot="Bytespider" data-kind="training"><option value="allow">Allow</option><option value="block">Block</option></select></td></tr><tr><td><code>Amazonbot</code></td><td>Amazon</td><td>Alexa answers and Amazon AI services</td><td><select data-bot="Amazonbot" data-kind="search"><option value="allow">Allow</option><option value="block">Block</option></select></td></tr><tr><td><code>__usage_ai-training</code></td><td>Shared (IETF)</td><td>One line to opt out of AI training with Google, Microsoft and OpenAI, honoured from 2027</td><td><select data-bot="__usage_ai-training" data-kind="shared"><option value="allow">Allow</option><option value="block">Block</option></select></td></tr></table></div>
+  <div class="row"><div><label for="paths">Also block these paths for everyone <small>(one per line, optional)</small></label><textarea id="paths" style="min-height:70px">/admin/
+/cart/</textarea></div>
+  <div><label for="sitemap">Sitemap URL <small>(optional)</small></label><input id="sitemap" value="https://yourbrand.com/sitemap.xml"></div></div>
+  <div style="display:flex;justify-content:space-between;align-items:center;margin:18px 0 8px"><h3 style="font-size:17px">Your robots.txt</h3>
+  <div style="display:flex;gap:8px"><button class="btn btn-soft" id="copy">Copy</button><button class="btn btn-dark" id="dl">Download</button></div></div>
+  <textarea id="out" readonly style="min-height:260px"></textarea>
+  <p class="hint">Upload it to the root of your site so it opens at <b>yourdomain.com/robots.txt</b>. On WordPress, most SEO plugins let you edit it.</p>
+</section>
+<section class="sec card">
+  <h2 style="font-size:20px">2. Check an existing robots.txt</h2>
+  <p class="hint">Open <b>yourdomain.com/robots.txt</b> in your browser, copy everything and paste it here. Nothing is sent anywhere.</p>
+  <textarea id="paste" placeholder="User-agent: *&#10;Disallow:" style="min-height:150px"></textarea>
+  <div class="tbl"><table id="report"><tr><th>Crawler</th><th>Result for your homepage</th></tr></table></div>
+</section>
+<section class="prose sec">
+<h2>Search crawlers vs training crawlers</h2>
+<p>Most AI companies now run separate crawlers. <b>Search</b> crawlers (OAI-SearchBot, Claude-SearchBot, PerplexityBot) put your pages into AI answers with a link. <b>Training</b> crawlers (GPTBot, ClaudeBot, Google-Extended, CCBot) collect pages to build future models. <b>User</b> fetchers open a page only when someone asks the assistant about it. That split lets you choose: be quoted in answers, but keep your writing out of training data.</p>
+<p>For most businesses that want to be recommended by AI, the right answer is to allow everything. Being read is how you get named. Read more in <a href="/guides/aeo-questions-answered/">AEO questions answered</a> and today's <a href="/news/">news on the shared opt-out</a>.</p>
+<h2>FAQ</h2><details><summary>How do I block AI training but stay in Google and ChatGPT search?</summary><p>Block the training crawlers (Google-Extended, GPTBot, ClaudeBot, Applebot-Extended, Meta-ExternalAgent, CCBot) and add the shared __usage_ai-training token, but keep Googlebot, Bingbot, OAI-SearchBot, Claude-SearchBot and PerplexityBot allowed. Choose the 'Stay in AI search, block training' preset above.</p></details><details><summary>What is __usage_ai-training?</summary><p>A robots.txt token from an IETF draft that tells AI companies not to train on your pages. Google, Microsoft and OpenAI said on 30 October 2026 that they will honour it, Microsoft from 1 February 2027 and Google in early 2027. A 'User-agent: *' rule does not count, so the token has to be named.</p></details><details><summary>Does blocking GPTBot remove me from ChatGPT?</summary><p>No. GPTBot is only for training. ChatGPT search uses OAI-SearchBot, and ChatGPT-User opens pages when someone asks. Block GPTBot alone and you can still appear in ChatGPT search answers.</p></details><details><summary>Can I block AI Overviews but stay in Google Search?</summary><p>Not with robots.txt. AI Overviews and AI Mode use Googlebot, the same crawler as normal Search. Google-Extended only covers Gemini training and the Gemini app. Google has a separate Search Console setting for AI features.</p></details><details><summary>Should my business block AI crawlers?</summary><p>Usually no. If you want ChatGPT, Gemini and Perplexity to recommend you, they need to read your pages. Blocking makes sense for publishers whose writing is the product, or for private and paid content.</p></details>
+</section>
+<section class="cta"><div><h2>Want AI to <span>say your name?</span></h2><p>Get a free AI visibility audit. I'll test ChatGPT, Gemini, Perplexity &amp; Google AI for your brand.</p></div>
+<a class="btn btn-orange" href="/#contact">Get my free AI audit →</a></section>
+</div>
+</main>
+<footer class="site"><nav><a href="/">Home</a><a href="/tools/">Free tools</a><a href="/news/">News</a><a href="/guides/">Guides</a><a href="/#services">Services</a><a href="/#contact">Contact</a></nav>
+© 2026 Juhi Chavda · AEO, SEO, websites &amp; custom ERP · Ahmedabad, India · serving clients worldwide</footer>
+<script>
+const $=id=>document.getElementById(id);
+const sels=[...document.querySelectorAll('select[data-bot]')];
+const PRESET={all:()=> 'allow', nottrain:k=>k==='training'||k==='shared'?'block':'allow',
+  noai:(k,b)=>['Googlebot','Bingbot','Applebot'].includes(b)?'allow':'block'};
+function applyPreset(){const f=PRESET[$('preset').value];sels.forEach(s=>s.value=f(s.dataset.kind,s.dataset.bot));build();}
+function build(){
+  let t='# robots.txt built with juhichavda.com/tools/ai-crawler-robots-txt-generator/\n\n';
+  const blocked=sels.filter(s=>s.value==='block').map(s=>s.dataset.bot);
+  const paths=$('paths').value.split('\n').map(s=>s.trim()).filter(Boolean);
+  if(blocked.length){t+='# AI crawlers you chose to block\n';blocked.forEach(b=>t+='User-agent: '+b+'\nDisallow: /\n\n');}
+  t+='# Everyone else\nUser-agent: *\n'+(paths.length?paths.map(p=>'Disallow: '+p).join('\n'):'Disallow:')+'\n';
+  const sm=$('sitemap').value.trim(); if(sm) t+='\nSitemap: '+sm+'\n';
+  $('out').value=t;
+}
+// ---- checker (RFC 9309: most specific group, longest matching rule, Allow wins ties; '*' never covers the shared token)
+function parse(txt){const groups=[];let cur=null,lastUA=false;
+  txt.split(/\r?\n/).forEach(line=>{line=line.replace(/#.*/,'').trim();if(!line)return;const m=line.match(/^([^:]+):\s*(.*)$/);if(!m)return;
+    const k=m[1].trim().toLowerCase(),v=m[2].trim();
+    if(k==='user-agent'){if(!cur||!lastUA){cur={ua:[],rules:[]};groups.push(cur);}cur.ua.push(v.toLowerCase());lastUA=true;}
+    else if((k==='allow'||k==='disallow')&&cur){cur.rules.push({allow:k==='allow',path:v});lastUA=false;} else lastUA=false;});
+  return groups;}
+function rx(p){let end=p.endsWith('$');if(end)p=p.slice(0,-1);return new RegExp('^'+p.replace(/[.+?^{}()|[\]\\]/g,'\\$&').replace(/\*/g,'.*')+(end?'$':''));}
+function verdict(groups,bot){const b=bot.toLowerCase();let g=groups.filter(x=>x.ua.includes(b));let via=bot;
+  if(!g.length){if(bot.startsWith('__'))return ['none','No preference set (a * rule does not count for this token)'];g=groups.filter(x=>x.ua.includes('*'));via='*';}
+  if(!g.length)return ['ok','Allowed (no rules apply)'];
+  const rules=g.flatMap(x=>x.rules).filter(r=>r.path!=='');let best=null;
+  rules.forEach(r=>{if(rx(r.path).test('/')){if(!best||r.path.length>best.path.length||(r.path.length===best.path.length&&r.allow))best=r;}});
+  const partial=rules.some(r=>!r.allow&&r.path!=='/'&&r.path!=='/*');
+  const someAllowed=rules.some(r=>r.allow&&r.path!=='/'&&r.path!=='/*');
+  if(best&&!best.allow&&bot.startsWith('__'))return ['bad','Opted out of AI training'+(someAllowed?', except some paths':'')];
+  if(best&&!best.allow)return ['bad','Blocked'+(via==='*'?' (by the * rule)':'')+(someAllowed?', some paths allowed':'')];
+  return ['ok','Allowed'+(via==='*'?' (by the * rule)':'')+(partial?', some paths blocked':'')];}
+function check(){const txt=$('paste').value;const r=$('report');r.innerHTML='<tr><th>Crawler</th><th>Result for your homepage</th></tr>';
+  if(!txt.trim()){r.innerHTML+='<tr><td colspan="2" class="hint">Paste a robots.txt above to see results.</td></tr>';return;}
+  const g=parse(txt);sels.forEach(s=>{const [c,msg]=verdict(g,s.dataset.bot);const cls=c==='bad'?'bad':c==='ok'?'good':'warn';
+    r.innerHTML+='<tr><td><code>'+s.dataset.bot+'</code></td><td class="'+cls+'"><b>'+msg+'</b></td></tr>';});}
+$('preset').onchange=applyPreset;sels.forEach(s=>s.onchange=build);$('paths').oninput=build;$('sitemap').oninput=build;$('paste').oninput=check;
+$('copy').onclick=()=>{navigator.clipboard.writeText($('out').value);$('copy').textContent='Copied ✓';};
+$('dl').onclick=()=>{const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([$('out').value],{type:'text/plain'}));a.download='robots.txt';a.click();};
+applyPreset();check();
+</script>
+</body>
+</html>
