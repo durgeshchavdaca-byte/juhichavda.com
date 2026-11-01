@@ -21,7 +21,7 @@ Services: AEO (answer engine optimisation), SEO, GEO, international and local SE
 
 ## Guides & news
 
-- [AEO & SEO News (October 2026): Google, ChatGPT & AI Search](https://juhichavda.com/news/): Daily plain-English AEO and SEO news for founders and marketers: Google updates, ChatGPT and AI search changes, each with what to do about it.
+- [AEO & SEO News (November 2026): Google, ChatGPT & AI Search](https://juhichavda.com/news/): Daily plain-English AEO and SEO news for founders and marketers: Google updates, ChatGPT and AI search changes, each with what to do about it.
 - [AEO Questions Answered: Is SEO Dead? Does llms.txt Work? (2026)](https://juhichavda.com/guides/aeo-questions-answered/): Straight answers to the AI search questions people ask on X: is AEO just SEO, is SEO dead, why ChatGPT picks a competitor, llms.txt, schema and ads.
 - [How to Get Your Business on ChatGPT (2026): SEO vs AEO + 9 Steps](https://juhichavda.com/guides/how-to-get-your-business-on-chatgpt/): How to get your business recommended by ChatGPT, Gemini and Google AI Mode in 2026. SEO vs AEO vs GEO explained, 9 practical steps, mistakes to avoid and FAQs.
 - [Guides: AEO, SEO and ERP for Small Businesses (2026)](https://juhichavda.com/guides/): Plain-English guides for founders and MSMEs: getting your business on ChatGPT, AEO questions answered, and choosing between Tally and an ERP.
