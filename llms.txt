@@ -9,6 +9,16 @@ Services: AEO (answer engine optimisation), SEO, GEO, international and local SE
 - [Home](https://juhichavda.com/): services, process, pricing models, FAQ and contact
 - [All free tools](https://juhichavda.com/tools/): list of free calculators and generators
 
+## Services
+
+- [AEO Services in India: Get Recommended by ChatGPT & Gemini](https://juhichavda.com/services/aeo-services/): AEO (answer engine optimization) services for startups and MSMEs in India and worldwide. Get named by ChatGPT, Gemini, Perplexity and Google AI Overviews.
+- [Custom ERP Software Development in India for MSMEs & Manufacturers](https://juhichavda.com/services/custom-erp-development/): Custom ERP development for Indian MSMEs and manufacturers: orders, inventory, production, dispatch and GST billing, built around how you work and linked to Tally.
+- [Services: AEO, SEO, Websites & Custom ERP](https://juhichavda.com/services/): AEO, SEO, international SEO, website development, custom ERP and WhatsApp automation for startups and MSMEs in India and worldwide.
+- [International SEO Services in India for Exporters & B2B Brands](https://juhichavda.com/services/international-seo/): International SEO for Indian exporters and B2B brands: country pages, hreflang and content that wins buyers in the UAE, UK, US and Europe.
+- [SEO Consultant in Ahmedabad: SEO, Local SEO & Google Maps](https://juhichavda.com/services/seo-consultant-ahmedabad/): SEO consultant in Ahmedabad for startups, MSMEs and local businesses. Technical SEO, local SEO, Google Business Profile and AI-ready content.
+- [Website Development in Ahmedabad: Fast, SEO & AEO-Ready Sites](https://juhichavda.com/services/website-development-ahmedabad/): Website design and development in Ahmedabad for startups and MSMEs. Fast, mobile-first, SEO and AEO-ready websites, e-commerce and landing pages.
+- [WhatsApp Automation & Custom Business Tools for Indian SMEs](https://juhichavda.com/services/whatsapp-automation-custom-tools/): WhatsApp automation, CRM set-up and custom tools for Indian businesses: lead follow-up, order updates, quote calculators, portals and AI assistants.
+
 ## Tools
 
 - [AI Crawler robots.txt Generator & Checker (Free, 2026)](https://juhichavda.com/tools/ai-crawler-robots-txt-generator/): Free robots.txt generator and checker for AI crawlers: GPTBot, OAI-SearchBot, ClaudeBot, Google-Extended and the new __usage_ai-training opt-out.
