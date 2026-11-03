@@ -137,3 +137,5 @@ footer.site nav a:hover{color:var(--orange)}
 table.bots select{padding:7px 9px;font-size:13.5px;min-width:96px}table.bots code,#report code{font-size:12.5px}#report td,table.bots td{vertical-align:middle}
 .card table{width:100%;border-collapse:collapse;font-size:14px;background:#fff}.card th,.card td{border:1px solid var(--line);padding:9px 11px;text-align:left}.card th{background:#F6F4EF}
 @media (max-width:560px){.tbl table.bots{min-width:0}table.bots th:nth-child(2),table.bots td:nth-child(2){display:none}table.bots td,table.bots th{padding:8px 7px;font-size:13px}table.bots select{min-width:78px;padding:6px}}
+
+.wa-fab{position:fixed;right:20px;bottom:20px;z-index:80;display:flex;align-items:center;gap:10px;background:#25D366;color:#fff;text-decoration:none;border-radius:999px;padding:12px 18px 12px 14px;box-shadow:0 10px 26px rgba(0,0,0,.22);font-weight:700;font-size:14.5px}.wa-fab:hover{transform:translateY(-2px)}@media (max-width:560px){.wa-fab b{display:none}.wa-fab{padding:14px}}
