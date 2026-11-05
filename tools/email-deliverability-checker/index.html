@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Email Deliverability Checker: SPF, DKIM & DMARC (Free)</title>
+<meta name="description" content="Free email deliverability checker. Test SPF, DKIM, DMARC, MX and BIMI for your domain in seconds, with plain-English fixes for Gmail, Yahoo and Outlook.">
+<link rel="canonical" href="https://juhichavda.com/tools/email-deliverability-checker/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Email Deliverability Checker: SPF, DKIM & DMARC (Free)">
+<meta property="og:description" content="Free email deliverability checker. Test SPF, DKIM, DMARC, MX and BIMI for your domain in seconds, with plain-English fixes for Gmail, Yahoo and Outlook.">
+<meta property="og:url" content="https://juhichavda.com/tools/email-deliverability-checker/">
+<meta property="og:image" content="https://juhichavda.com/assets/juhi-3d-original.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/assets/juhi-3d-original.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800;900&family=Geist+Mono:wght@400;500&family=Caveat:wght@700&family=Gochi+Hand&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/sub.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://juhichavda.com/"}, {"@type": "ListItem", "position": 2, "name": "Free tools", "item": "https://juhichavda.com/tools/"}, {"@type": "ListItem", "position": 3, "name": "Email deliverability checker", "item": "https://juhichavda.com/tools/email-deliverability-checker/"}]}, {"@type": "Person", "@id": "https://juhichavda.com/#juhi", "name": "Juhi Chavda", "url": "https://juhichavda.com/", "jobTitle": "AEO & SEO Consultant", "sameAs": ["https://www.linkedin.com/in/juhichavda/"]}, {"@type": "WebApplication", "name": "Email Deliverability Checker", "url": "https://juhichavda.com/tools/email-deliverability-checker/", "description": "Check SPF, DKIM, DMARC, MX and BIMI records for any domain.", "applicationCategory": "BusinessApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "creator": {"@id": "https://juhichavda.com/#juhi"}}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Why are my emails going to spam?", "acceptedAnswer": {"@type": "Answer", "text": "The most common reasons are missing or broken SPF, DKIM or DMARC records, sending from a new domain too fast, a high spam complaint rate, no unsubscribe link, and links or images that look like spam. Start by checking your domain's records above."}}, {"@type": "Question", "name": "What are SPF, DKIM and DMARC?", "acceptedAnswer": {"@type": "Answer", "text": "SPF lists which servers may send email for your domain. DKIM adds a signature that proves the email wasn't changed and really came from you. DMARC tells inboxes what to do when SPF or DKIM fail, and sends you reports. Gmail, Yahoo and Outlook now expect all three from bulk senders."}}, {"@type": "Question", "name": "What are Gmail's bulk sender requirements?", "acceptedAnswer": {"@type": "Answer", "text": "If you send more than 5,000 emails a day to Gmail addresses, Google requires SPF, DKIM and a DMARC record, a From address that aligns with them, one-click unsubscribe for marketing emails, and a spam complaint rate below 0.3%. Google recommends staying under 0.1%. Yahoo and Outlook have similar rules."}}, {"@type": "Question", "name": "How do I find my DKIM selector?", "acceptedAnswer": {"@type": "Answer", "text": "Open an email you sent, choose 'Show original' in Gmail, and look for 's=' inside the DKIM-Signature line. That word is the selector. Google Workspace usually uses 'google', Microsoft 365 uses 'selector1' and 'selector2'."}}, {"@type": "Question", "name": "Is p=none enough for DMARC?", "acceptedAnswer": {"@type": "Answer", "text": "It meets the minimum rule for bulk senders and is the right first step, because you can read reports without blocking anything. Once your reports look clean, move to p=quarantine and later p=reject to stop others sending email that pretends to be you."}}]}]}</script>
+</head>
+<body>
+<header class="topnav" id="nav"><div class="wrap">
+  <a class="logo" href="/"><b>J</b>juhi<i>.</i></a><a class="l" href="/">Home</a><a class="l" href="/services/">Services</a><a class="l on" href="/tools/">Free tools</a><a class="l" href="/news/">News</a><a class="l" href="/guides/">Guides</a><a class="l" href="/newsletter/">Newsletter</a>
+  <a class="btn btn-dark" href="/#contact">Free AI audit</a>
+  <button class="menu-btn" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+</div></header>
+<main>
+<div class="wrap"><div class="crumbs"><a href="/">Home</a> / <a href="/tools/">Free tools</a> / Email deliverability checker</div>
+<section class="hero"><div class="eyebrow">Free tool · Email</div><h1>Email <em>deliverability</em> checker</h1><p class="lead">Find out why your emails land in spam. Enter your domain and check SPF, DKIM, DMARC, MX and BIMI in one go, with fixes in plain English.</p><div class="answer"><b class="k">QUICK ANSWER</b>To land in the inbox, your domain needs one valid SPF record, a DKIM key for every service that sends your email, and a DMARC record. Gmail, Yahoo and Outlook require all three from anyone sending more than 5,000 emails a day, plus one-click unsubscribe. This free checker tests all of them in seconds.</div>
+<span class="updated">Updated 5 Nov 2026 · by <a href="/">Juhi Chavda</a></span></section>
+
+<section class="sec card">
+  <h2 style="font-size:20px">Check your domain</h2>
+  <div class="row"><div><label for="dom">Your email domain <small>(the part after @)</small></label><input id="dom" placeholder="yourbrand.com" autocomplete="off"></div>
+  <div><label for="sel">DKIM selector <small>(optional, we also try 24 common ones)</small></label><input id="sel" placeholder="e.g. google"></div></div>
+  <div style="margin-top:14px;display:flex;gap:10px;align-items:center;flex-wrap:wrap"><button class="btn btn-dark" id="go">Check my email setup</button><span class="hint" id="status">Runs live DNS lookups from your browser. Nothing is stored.</span></div>
+  <div id="score" style="display:none;margin-top:18px" class="out"><div class="metric hi"><small>Deliverability setup score</small><b id="sc">-</b></div><div class="metric"><small>Email provider</small><b id="prov" style="font-size:18px">-</b></div></div>
+  <div class="tbl"><table id="res" style="display:none"><tr><th>Check</th><th>Result</th><th>What it means</th></tr></table></div>
+  <div id="fixes"></div>
+</section>
+<section class="prose sec">
+<h2>What this checks</h2>
+<ul>
+<li><b>MX records:</b> which service receives your email (Google Workspace, Microsoft 365, Zoho and others).</li>
+<li><b>SPF:</b> that you have exactly one SPF record, it ends with ~all or -all, and it stays under the 10 DNS lookup limit.</li>
+<li><b>DKIM:</b> that a signing key exists. We try your selector plus 24 common ones used by Google, Microsoft, Zoho, Mailchimp, SendGrid, Brevo and others.</li>
+<li><b>DMARC:</b> that a policy exists, what it is set to, and whether you receive reports.</li>
+<li><b>BIMI:</b> whether your logo can show next to your emails in supporting inboxes. This is optional.</li>
+</ul>
+<p>Getting these right is the first step in email marketing. If you send newsletters or offers, see how I set up <a href="/services/email-marketing-newsletters/">email marketing and newsletters</a> for businesses, and read <a href="/guides/why-emails-go-to-spam/">why emails go to spam</a>.</p>
+<h2>FAQ</h2><details><summary>Why are my emails going to spam?</summary><p>The most common reasons are missing or broken SPF, DKIM or DMARC records, sending from a new domain too fast, a high spam complaint rate, no unsubscribe link, and links or images that look like spam. Start by checking your domain's records above.</p></details><details><summary>What are SPF, DKIM and DMARC?</summary><p>SPF lists which servers may send email for your domain. DKIM adds a signature that proves the email wasn't changed and really came from you. DMARC tells inboxes what to do when SPF or DKIM fail, and sends you reports. Gmail, Yahoo and Outlook now expect all three from bulk senders.</p></details><details><summary>What are Gmail's bulk sender requirements?</summary><p>If you send more than 5,000 emails a day to Gmail addresses, Google requires SPF, DKIM and a DMARC record, a From address that aligns with them, one-click unsubscribe for marketing emails, and a spam complaint rate below 0.3%. Google recommends staying under 0.1%. Yahoo and Outlook have similar rules.</p></details><details><summary>How do I find my DKIM selector?</summary><p>Open an email you sent, choose 'Show original' in Gmail, and look for 's=' inside the DKIM-Signature line. That word is the selector. Google Workspace usually uses 'google', Microsoft 365 uses 'selector1' and 'selector2'.</p></details><details><summary>Is p=none enough for DMARC?</summary><p>It meets the minimum rule for bulk senders and is the right first step, because you can read reports without blocking anything. Once your reports look clean, move to p=quarantine and later p=reject to stop others sending email that pretends to be you.</p></details>
+</section>
+<section class="cta"><div><h2>Want AI to <span>say your name?</span></h2><p>Get a free AI visibility audit. I'll test ChatGPT, Gemini, Perplexity &amp; Google AI for your brand.</p></div>
+<div style="display:flex;gap:10px;flex-wrap:wrap"><a class="btn btn-orange" href="/#contact">Get my free AI audit →</a><a class="btn btn-soft" href="https://wa.me/917984497970?text=Hi%20Juhi%2C%20I%27d%20like%20a%20free%20AI%20visibility%20audit." target="_blank" rel="noopener">WhatsApp Juhi</a></div></section>
+</div>
+</main>
+<footer class="site"><nav><a href="/">Home</a><a href="/tools/">Free tools</a><a href="/news/">News</a><a href="/guides/">Guides</a><a href="/newsletter/">Newsletter</a><a href="/services/">Services</a><a href="/#contact">Contact</a></nav>
+© 2026 Juhi Chavda · AEO, SEO, websites &amp; custom ERP · Ahmedabad, India · serving clients worldwide</footer>
+<a class="wa-fab" href="https://wa.me/917984497970?text=Hi%20Juhi%2C%20I%27d%20like%20a%20free%20AI%20visibility%20audit." target="_blank" rel="noopener" aria-label="Chat with Juhi on WhatsApp"><svg width="28" height="28" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.2-.2-.5-.3z"/></svg><b>Free audit on WhatsApp</b></a>
+<script>
+const $=id=>document.getElementById(id);
+const SELS=["google", "selector1", "selector2", "k1", "k2", "s1", "s2", "zoho", "zmail", "default", "dkim", "mail", "mandrill", "resend", "brevo1", "brevo2", "sib", "mailjet", "smtp", "pm", "everlytickey1", "cm", "fd", "mxvault"];
+async function q(name,type){try{const r=await fetch('https://dns.google/resolve?name='+encodeURIComponent(name)+'&type='+type,{headers:{accept:'application/dns-json'}});const j=await r.json();return (j.Answer||[]).filter(a=>a.type===(type==='MX'?15:16)).map(a=>a.data.replace(/^"|"$/g,'').replace(/" "/g,''));}catch(e){return null;}}
+function row(name,ok,result,meaning){const c=ok===true?'good':ok===false?'bad':'warn';const s=ok===true?'✓':ok===false?'✗':'!';$('res').insertAdjacentHTML('beforeend','<tr><td><b>'+name+'</b></td><td class="'+c+'"><b>'+s+'</b> '+result+'</td><td>'+meaning+'</td></tr>');}
+function provider(mx){const m=mx.join(' ').toLowerCase();if(/google|googlemail/.test(m))return 'Google Workspace';if(/outlook|protection\.outlook/.test(m))return 'Microsoft 365';if(/zoho/.test(m))return 'Zoho Mail';if(/secureserver/.test(m))return 'GoDaddy';if(/hostinger/.test(m))return 'Hostinger';if(/registrar-servers|privateemail/.test(m))return 'Namecheap';if(/titan/.test(m))return 'Titan';return mx.length?'Other':'None found';}
+async function run(){
+  let d=$('dom').value.trim().toLowerCase().replace(/^https?:\/\//,'').replace(/^www\./,'').replace(/^.*@/,'').replace(/\/.*$/,'');
+  if(!d||!d.includes('.')){$('status').textContent='Enter a domain like yourbrand.com';return;}
+  $('status').textContent='Checking '+d+'…';$('res').innerHTML='<tr><th>Check</th><th>Result</th><th>What it means</th></tr>';$('fixes').innerHTML='';
+  let score=0;const fixes=[];
+  const [mx,txt,dm,bimi]=await Promise.all([q(d,'MX'),q(d,'TXT'),q('_dmarc.'+d,'TXT'),q('default._bimi.'+d,'TXT')]);
+  if(mx===null){$('status').textContent='Could not reach the DNS service. Check your connection and try again.';return;}
+  const prov=provider((mx||[]).map(x=>x.split(' ').pop()));
+  if(mx.length){score+=10;row('MX',true,mx.length+' record(s): '+mx.map(x=>x.split(' ').pop()).slice(0,2).join(', '),'Your domain can receive email.');}
+  else{row('MX',false,'No MX records','This domain cannot receive email, which hurts trust.');fixes.push('Add MX records from your email provider so replies and bounces reach you.');}
+  const spf=(txt||[]).filter(t=>/^v=spf1/i.test(t));
+  if(spf.length===1){const s=spf[0];const look=(s.match(/\b(include:|a\b|a:|mx\b|mx:|ptr|exists:|redirect=)/gi)||[]).length;
+    if(/\+all/.test(s)){row('SPF',false,'+all found','+all lets anyone send as you. Change it to ~all.');fixes.push('Change "+all" to "~all" in your SPF record.');}
+    else if(/[~-]all/.test(s)){score+=25;row('SPF',true,'<code>'+s.slice(0,90)+(s.length>90?'…':'')+'</code>','Valid SPF with '+(look)+' direct lookup(s). The limit is 10 including nested ones.');if(look>8)fixes.push('Your SPF uses many includes. Check it stays under 10 DNS lookups, or emails may fail SPF.');}
+    else{score+=12;row('SPF','warn','No ~all or -all at the end','Add ~all at the end so inboxes know the list is complete.');fixes.push('End your SPF record with "~all".');}}
+  else if(spf.length>1){row('SPF',false,spf.length+' SPF records','You can only have one. Multiple records make SPF fail.');fixes.push('Merge your SPF records into one line, for example v=spf1 include:_spf.google.com include:sendgrid.net ~all');}
+  else{row('SPF',false,'Missing','Inboxes can\'t tell which servers may send for you.');fixes.push(prov==='Google Workspace'?'Add a TXT record: v=spf1 include:_spf.google.com ~all':prov==='Microsoft 365'?'Add a TXT record: v=spf1 include:spf.protection.outlook.com -all':'Add an SPF TXT record from your email provider\'s setup page.');}
+  const custom=$('sel').value.trim().toLowerCase();const list=[...new Set([custom,...SELS].filter(Boolean))];
+  const dk=await Promise.all(list.map(async s=>{const r=await q(s+'._domainkey.'+d,'TXT');return (r&&r.some(t=>/p=/.test(t)||/v=DKIM1/i.test(t)))?s:null;}));
+  const found=dk.filter(Boolean);
+  if(found.length){score+=30;row('DKIM',true,'Key found for: '+found.join(', '),'Your emails can be signed, which proves they really came from you.');}
+  else{row('DKIM','warn','No key found for '+list.length+' common selectors','Either DKIM isn\'t set up, or it uses a selector we didn\'t try. Enter yours above.');fixes.push(prov==='Google Workspace'?'Turn on DKIM: Google Admin console → Apps → Google Workspace → Gmail → Authenticate email → Generate new record, add it as a TXT record at your DNS host, then click Start authentication.':prov==='Microsoft 365'?'Turn on DKIM in Microsoft Defender (Email authentication settings → DKIM) and add the two CNAME records it shows.':'Turn on DKIM in your email provider and every sending tool (Mailchimp, Brevo, etc.), then add the records they give you.');}
+  const dmarc=(dm||[]).find(t=>/^v=DMARC1/i.test(t));
+  if(dmarc){const p=(dmarc.match(/;\s*p=(\w+)/i)||[])[1]||'none';const rua=/rua=/i.test(dmarc);
+    if(p==='reject'||p==='quarantine'){score+=30;row('DMARC',true,'p='+p+(rua?' with reports':''),'Strong policy. Fake emails using your domain get blocked or sent to spam.');}
+    else{score+=20;row('DMARC','warn','p=none'+(rua?' with reports':''),'Meets the minimum rule, but doesn\'t stop spoofing yet.');fixes.push('Your DMARC is p=none. After 2 to 4 weeks of clean reports, change it to p=quarantine, then p=reject.');}
+    if(!rua)fixes.push('Add rua=mailto:you@yourdomain.com to your DMARC record so you receive reports.');}
+  else{row('DMARC',false,'Missing','Gmail, Yahoo and Outlook expect DMARC from bulk senders.');fixes.push('Add a TXT record at _dmarc.'+d+' with: v=DMARC1; p=none; rua=mailto:dmarc@'+d);}
+  const bm=(bimi||[]).find(t=>/^v=BIMI1/i.test(t));
+  if(bm){score+=5;row('BIMI',true,'Record found','Your logo can show beside your emails in supporting inboxes.');}else row('BIMI','warn','Not set (optional)','Lets your logo appear in Gmail and Yahoo. Needs DMARC at quarantine or reject first.');
+  score=Math.min(100,score);$('sc').textContent=score+'/100';$('sc').className=score>=80?'good':score>=50?'warn':'bad';$('prov').textContent=prov;
+  $('score').style.display='grid';$('res').style.display='table';$('status').textContent='Checked '+d+'.';
+  $('fixes').innerHTML=fixes.length?'<h3 style="font-size:17px;margin:18px 0 8px">Fix these, in this order</h3><ol>'+fixes.map(f=>'<li style="margin-bottom:6px">'+f+'</li>').join('')+'</ol><p class="hint">Want me to fix them for you? <a href="/#contact">Ask for help</a>.</p>':'<p class="good" style="margin-top:14px"><b>Your email setup looks solid.</b></p>';
+}
+$('go').onclick=run;$('dom').addEventListener('keydown',e=>{if(e.key==='Enter')run();});
+const qd=new URLSearchParams(location.search).get('domain');if(qd){$('dom').value=qd;run();}
+</script>
+</body>
+</html>
